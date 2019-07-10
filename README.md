@@ -1,6 +1,9 @@
 ## SSD EfficientNet in tensorflow keras version
 Unofficial implementation of SSD with [EfficientNet](https://arxiv.org/abs/1905.11946) backbone using tf keras. 
 
+### UPDATE
+Here is the [link](https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet) for official EfficientNet implementation for TPU training. 
+
 ### Usage Steps
 1. Put `efficientnet.py` and `efficient_feature_extractor.py` under `object_detection/models` directory
 2. Modify `model_builder.py` and add **SSDEfficientNetFeatureExtractor** and **SSDEfficientNetFPNFeatureExtractor**
