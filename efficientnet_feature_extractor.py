@@ -97,7 +97,7 @@ class SSDEfficientNetFPNFeatureExtractor(ssd_meta_arch.SSDKerasFeatureExtractor)
             default_nodes = ["block_14", "block_30", "block_44", "", "", "", ""]
             self._backbone_layers = 44
         elif network_version == "efficientnet-b7":
-            default_nodes ["block_17", "block_37", "block_54", "", "", "", ""]
+            default_nodes = ["block_17", "block_37", "block_54", "", "", "", ""]
             self._backbone_layers = 54
         else:
             raise ValueError("Unknown efficientnet name: {}".format(network_version))
@@ -258,7 +258,7 @@ class SSDEfficientNetFeatureExtractor(ssd_meta_arch.SSDKerasFeatureExtractor):
         elif network_version == "efficientnet-b6":
             default_nodes = ["block_14", "block_30", "block_44", "", "", "", ""]
         elif network_version == "efficientnet-b7":
-            default_nodes ["block_17", "block_37", "block_54", "", "", "", ""]
+            default_nodes = ["block_17", "block_37", "block_54", "", "", "", ""]
         else:
             raise ValueError("Unknown efficientnet name: {}".format(network_version))
         # default_nodes = ["reduction_3", "reduction_4", "reduction_5", "", "", ""]
