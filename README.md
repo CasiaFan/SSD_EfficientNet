@@ -6,7 +6,7 @@ Here is the [link](https://github.com/tensorflow/tpu/tree/master/models/official
 
 ### Install Requirement
 - Python 3.X
-- TensorFlow 1.4 
+- TensorFlow 1.13.1 (Use current version 1.14 would cause a wired dimension mismatch caused by se-expand operation in se block.) 
 - TensorFlow Models master branch
 - Protoc 3.5.7
 

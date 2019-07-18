@@ -74,7 +74,6 @@ class SSDEfficientNetFPNFeatureExtractor(ssd_meta_arch.SSDKerasFeatureExtractor)
         self._max_feature_level = max_feature_level
         self._additional_layer_depth = additional_layer_depth
         self._network_name = network_version
-        self._name = name 
         if network_version == "efficientnet-b0":
             default_nodes = ["block_4", "block_10", "block_15", "", "", "", ""] 
             self._backbone_layers = 15
@@ -242,7 +241,6 @@ class SSDEfficientNetFeatureExtractor(ssd_meta_arch.SSDKerasFeatureExtractor):
         self._max_feature_level = max_feature_level
         self._additional_layer_depth = additional_layer_depth
         self._network_name = network_version
-        self._name = name 
         if network_version == "efficientnet-b0":
             default_nodes = ["block_4", "block_10", "block_15", "", "", "", ""] 
         elif network_version == "efficientnet-b1":
