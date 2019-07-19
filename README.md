@@ -25,4 +25,4 @@ SSD_KERAS_FEATURE_EXTRACTOR_CLASS_MAP = {
 3. Replace `ssd.proto` file under `protos` with this one. **Then make sure to rerun `protoc object_detection/protos/ssd.proto --python_out=.`**
 4. Install TensorFlow object detection api: see [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 5. Train model following [official steps](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md)
-6. Refer to `ssd_efficientnet,config` as example config
+6. Refer to `ssd_efficientnet.config` and `ssd_efficientnet_fpn.config` as example config (If use `ssd_efficientnet_fpn` backbone, make sure `use_explicit_padding` is `true` to prevent potential mismatch error during top down addition operation).

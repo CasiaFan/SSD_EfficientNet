@@ -317,4 +317,4 @@ class SSDEfficientNetFeatureExtractor(ssd_meta_arch.SSDKerasFeatureExtractor):
                 final_feature_map.append(feature)
             return final_feature_map
         else:
-            return feature_maps.values() 
+            return list(feature_maps.values())
